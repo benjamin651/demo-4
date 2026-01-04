@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Fresh Cut Lawn Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0f5742',
+              secondary: '#1fad85',
+              highlight: '#52e0b8',
+              softbg: '#0f5742/90'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-white" style="background-color: #18aa4d">
+
+<custom-navbar></custom-navbar>
+
+<main class="container mx-auto px-4 py-24">
+
+  <!-- Hero Section -->
+  <section class="relative bg-primary rounded-2xl overflow-hidden mb-16">
+    <div class="absolute inset-0 bg-black/25"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center py-20 px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif">Our Work Gallery</h1>
+      <p class="text-lg mb-8">See examples of our premium lawn care and landscaping services</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <section class="mb-12">
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="filter-btn bg-secondary text-white px-6 py-2 rounded-full font-medium transition duration-300" data-filter="all">All Services</button>
+      <button class="filter-btn bg-primary hover:bg-highlight px-6 py-2 rounded-full font-medium transition duration-300" data-filter="lawn">Lawn Care</button>
+      <button class="filter-btn bg-primary hover:bg-highlight px-6 py-2 rounded-full font-medium transition duration-300" data-filter="winter">Winter Services</button>
+      <button class="filter-btn bg-primary hover:bg-highlight px-6 py-2 rounded-full font-medium transition duration-300" data-filter="tree">Tree Care</button>
+      <button class="filter-btn bg-primary hover:bg-highlight px-6 py-2 rounded-full font-medium transition duration-300" data-filter="landscape">Landscaping</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="mb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Lawn Care -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="lawn">
+        <img src="http://static.photos/outdoor/640x360/1" alt="Lawn maintenance" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Residential Lawn Care</h3>
+          <p class="text-highlight">Fertilization, weed control, and regular maintenance</p>
+        </div>
+      </div>
+      
+      <!-- Winter -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="winter">
+        <img src="http://static.photos/outdoor/640x360/2" alt="Snow removal" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Winter Services</h3>
+          <p class="text-highlight">Snow removal and ice management</p>
+        </div>
+      </div>
+      
+      <!-- Tree Care -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="tree">
+        <img src="http://static.photos/outdoor/640x360/3" alt="Tree pruning" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Tree Pruning</h3>
+          <p class="text-highlight">Professional pruning for tree health and aesthetics</p>
+        </div>
+      </div>
+      
+      <!-- Landscaping -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="landscape">
+        <img src="http://static.photos/outdoor/640x360/4" alt="Landscape design" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Landscape Design</h3>
+          <p class="text-highlight">Custom outdoor spaces that complement your home</p>
+        </div>
+      </div>
+      
+      <!-- Lawn Care -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="lawn">
+        <img src="http://static.photos/outdoor/640x360/5" alt="Lawn aeration" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Lawn Aeration</h3>
+          <p class="text-highlight">Core aeration for healthier grass growth</p>
+        </div>
+      </div>
+      
+      <!-- Winter -->
+      <div class="gallery-item relative group overflow-hidden rounded-xl" data-category="winter">
+        <img src="http://static.photos/outdoor/640x360/6" alt="Snow plowing" class="w-full h-80 object-cover transition duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition duration-300 p-6">
+          <h3 class="text-xl font-bold mb-2">Commercial Snow Removal</h3>
+          <p class="text-highlight">Reliable service for businesses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-primary rounded-2xl p-10 text-center">
+    <h2 class="text-3xl font-bold mb-6 font-serif">Ready to Transform Your Outdoor Space?</h2>
+    <p class="text-lg mb-8 max-w-2xl mx-auto">Our team is ready to discuss your lawn care needs and provide a customized solution.</p>
+    <a href="estimate.html" class="inline-block bg-secondary hover:bg-highlight text-white px-8 py-3 rounded-full font-medium transition duration-300">
+      Get a Free Estimate
+    </a>
+  </section>
+
+</main>
+
+<custom-footer></custom-footer>
+
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+<script src="script.js"></script>
+<script>
+  // Gallery filter functionality
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Update active button
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-secondary', 'text-white');
+        b.classList.add('bg-primary', 'hover:bg-highlight');
+      });
+      this.classList.add('bg-secondary', 'text-white');
+      this.classList.remove('bg-primary', 'hover:bg-highlight');
+
+      // Filter items
+      const filter = this.dataset.filter;
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Fresh Cut Lawn Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#0f5742',      // Dark main background
+          secondary: '#1fad85',    // Buttons / accents
+          highlight: '#52e0b8',    // Highlights / icons
+          softbg: '#a8f0db',       // Subtle card background
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-white" style="background-color: #18aa4d;">
+
+<custom-navbar></custom-navbar>
+
+<main class="container mx-auto px-4 py-24">
+
+  <!-- Hero Section -->
+  <section class="relative bg-primary rounded-2xl overflow-hidden mb-16">
+    <div class="absolute inset-0 bg-black/25"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center py-20 px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 font-serif">Our Services</h1>
+      <p class="text-lg mb-8">Comprehensive lawn care solutions for residential and commercial properties</p>
+      <a href="estimate.html" class="inline-block bg-secondary text-white hover:bg-highlight px-8 py-3 rounded-full font-medium transition duration-300">Get a Free Estimate</a>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Lawn Care -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Lawn Care</h2>
+          <p class="mb-6 text-white/90">Our comprehensive lawn maintenance program keeps your grass lush and healthy throughout the season with regular treatments tailored to your lawn's specific needs.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Customized fertilization program</li>
+            <li>Weed prevention & control</li>
+            <li>Core aeration</li>
+            <li>Grub control</li>
+            <li>Disease prevention</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $49/month</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grass Cutting -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Grass Cutting</h2>
+          <p class="mb-6 text-white/90">Regular mowing services to keep your lawn looking neat and well-groomed throughout the season.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Weekly or bi-weekly mowing</li>
+            <li>Edging along walkways and flowerbeds</li>
+            <li>Trimming around trees and obstacles</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $35/mow</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seasonal Cleanup -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Seasonal Cleanup</h2>
+          <p class="mb-6 text-white/90">Keep your yard healthy and clean with our spring and fall cleanup services.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Leaf and debris removal</li>
+            <li>Pruning of shrubs and small trees</li>
+            <li>Garden bed cleanup and mulching</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $75/service</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winter Services -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Winter Services</h2>
+          <p class="mb-6 text-white/90">Keep your property safe and accessible all winter long with our reliable snow removal and ice management services.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Snow plowing & removal</li>
+            <li>Ice management with eco-friendly products</li>
+            <li>Sidewalk clearing</li>
+            <li>24/7 emergency service</li>
+            <li>Holiday lighting installation</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $99/season</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tree Care -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Tree Care</h2>
+          <p class="mb-6 text-white/90">Professional tree maintenance and care services to enhance your landscape's beauty and ensure the health of your trees.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Pruning & trimming</li>
+            <li>Disease diagnosis & treatment</li>
+            <li>Insect control</li>
+            <li>Tree removal & stump grinding</li>
+            <li>Emergency storm damage service</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $150/service</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Landscape Design -->
+      <div class="bg-primary/90 border border-softbg/20 rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Landscape Design</h2>
+          <p class="mb-6 text-white/90">Transform your outdoor space with our custom landscape design services, creating beautiful, functional environments.</p>
+          <h3 class="text-lg font-semibold mb-3">Service Includes:</h3>
+          <ul class="space-y-2 mb-6">
+            <li>Custom landscape design</li>
+            <li>Hardscape installation</li>
+            <li>Garden bed design</li>
+            <li>Irrigation system design</li>
+            <li>Outdoor lighting design</li>
+          </ul>
+          <div class="flex items-center justify-between">
+            <span class="text-xl font-bold">From $500/project</span>
+            <a href="#contact" class="bg-secondary hover:bg-highlight text-white px-6 py-2 rounded-md font-medium transition duration-300">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<custom-footer></custom-footer>
+
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

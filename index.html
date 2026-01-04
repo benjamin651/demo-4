@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Cut Lawn Care | Premium Lawn Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f5742',      // Dark background
+            secondary: '#1fad85',    // Buttons / accents
+            highlight: '#52e0b8',    // Highlights / icons
+            softbg: '#a8f0db'        // Lighter backgrounds inside cards
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans text-white" style="background-color: #19aa4d;">
+
+  <custom-navbar></custom-navbar>
+
+  <main class="container mx-auto px-4 py-12">
+
+    <!-- Hero -->
+    <section class="relative bg-primary rounded-2xl overflow-hidden mb-16">
+      <div class="absolute inset-0 bg-black/25"></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-center py-20 px-6">
+        <h1 class="text-4xl md:text-5xl font-semibold mb-4 font-serif">
+          Fresh Cut Lawn Care
+        </h1>
+        <p class="text-lg mb-8">
+          Premium lawn services for lush, healthy, and vibrant outdoor spaces
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="estimate.html" class="bg-secondary text-primary hover:bg-highlight px-8 py-3 rounded-full font-medium transition">
+            Free Estimate
+          </a>
+          <a href="services.html" class="bg-secondary text-primary hover:bg-highlight px-8 py-3 rounded-full font-medium transition">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Summary -->
+    <section class="mb-16 backdrop-blur-sm rounded-2xl p-8 md:p-12 max-w-6xl mx-auto" style="background-color: #0f5742;">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="award" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-medium mb-2 font-serif">Quality</h3>
+          <p class="text-sm">Premium lawn care services using the best equipment and techniques</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="sun" class="w-8 h-8 text-white"></i>
+          </div>
+          <h3 class="text-xl font-medium mb-2 font-serif">Sustainability</h3>
+          <p class="text-sm">Eco-friendly practices that keep your lawn healthy and our planet greener</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-feather="users" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-medium mb-2 font-serif">Community</h3>
+          <p class="text-sm">Supporting local businesses and giving back to the communities we serve</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+<section class="mb-20">
+      <h2 class="text-3xl font-semibold text-center mb-12 font-serif">
+        Our Services
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Lawn Care -->
+        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+          <div class="h-44 bg-softbg/10 flex items-center justify-center">
+            <i data-feather="sun" class="w-14 h-14"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-medium mb-3">Lawn Care</h3>
+            <p class="mb-4">
+              Comprehensive seasonal care for a vibrant, healthy lawn.
+            </p>
+            <ul class="space-y-2 mb-4 text-sm">
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Fertilization</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Weed Control</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Aeration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Winter Services -->
+        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+          <div class="h-44 bg-softbg/10 flex items-center justify-center">
+            <i data-feather="cloud-snow" class="w-14 h-14"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-medium mb-3">Winter Services</h3>
+            <p class="mb-4">
+              Reliable snow removal and ice management for safety all winter.
+            </p>
+            <ul class="space-y-2 mb-4 text-sm">
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Snow Removal</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Ice Control</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Seasonal Prep</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tree Care -->
+        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+          <div class="h-44 bg-softbg/10 flex items-center justify-center">
+            <i data-feather="tree" class="w-14 h-14"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-medium mb-3">Tree Care</h3>
+            <p class="mb-4">
+              Professional pruning and care for long-term tree health.
+            </p>
+            <ul class="space-y-2 mb-4 text-sm">
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Pruning</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Disease Treatment</li>
+              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Removal</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="mb-20 bg-primary rounded-2xl p-10">
+      <h2 class="text-3xl font-semibold text-center mb-12 font-serif">
+        Our Work Gallery
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative group overflow-hidden rounded-xl">
+          <img src="http://static.photos/outdoor/640x360/1" alt="Lawn care" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+            <span class="text-white text-lg font-medium">Residential Lawn Care</span>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl">
+          <img src="http://static.photos/outdoor/640x360/2" alt="Snow removal" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+            <span class="text-white text-lg font-medium">Winter Maintenance</span>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl">
+          <img src="http://static.photos/outdoor/640x360/6" alt="Commercial" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+            <span class="text-white text-lg font-medium">Commercial Services</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="gallery.html" class="inline-block bg-secondary hover:bg-highlight text-white px-8 py-3 rounded-full font-medium transition duration-300">
+          View Full Gallery
+        </a>
+      </div>
+    </section>
+    <div class="mb-32"></div>
+
+    <h2 class="text-3xl font-semibold text-center mb-16 font-serif">
+
+      <section class="relative -translate-y-16">
+  <h2 class="text-3xl text-center mb-12 font-serif">
+    Client Feedback
+  </h2>
+  <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+    <div class="bg-primary/90 p-6 rounded-lg shadow-md border border-highlight/20">
+      <div class="flex mb-3 text-highlight space-x-1">
+        <i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i>
+        <i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i>
+        <i data-feather="star" class="fill-current"></i>
+      </div>
+      <p class="mt-20 mb-20 text-white/90 text-lg font-sans">
+        “Consistent, professional, and easy to work with. Our lawn has never looked better.”
+      </p>
+      <p class="text-sm text-highlight">Sarah J. · Edmonton</p>
+    </div>
+
+    <div class="bg-primary/90 p-6 rounded-lg shadow-md border border-highlight/20">
+      <div class="flex mb-3 text-highlight space-x-1">
+        <i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i>
+        <i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i>
+        <i data-feather="star" class="fill-current"></i>
+      </div>
+      <p class="mt-20 mb-20 text-white/90 text-lg font-sans">
+        “Reliable service year-round. Their winter work is just as solid as their summer care.”
+      </p>
+      <p class="text-sm text-highlight">Michael C. · Calgary</p>
+    </div>
+  </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary rounded-2xl p-10 text-center mb-100">
+      <h2 class="text-3xl font-bold mb-6 font-serif">Ready to Transform Your Lawn?</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto font-sans">Get started with a free, no-obligation estimate today.</p>
+      <a href="estimate.html" class="inline-block bg-secondary hover:bg-highlight text-white px-8 py-3 rounded-full font-medium transition duration-300 text-lg font-sans">
+        Request Free Estimate
+      </a>
+    </section>
+
+  </main>
+<custom-footer></custom-footer>
+
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
