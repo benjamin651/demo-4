@@ -14,11 +14,29 @@ h1, h2, h3, h4, .font-serif {
 .bg-green-gradient {
     background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
 }
-
 .shadow-soft {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 87, 66, 0.8);
+    z-index: 0;
+}
+
+.bg-overlay > * {
+    position: relative;
+    z-index: 1;
+}
 .transition-all {
     transition: all 0.3s ease;
 }
