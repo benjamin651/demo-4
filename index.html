@@ -33,11 +33,10 @@
   <custom-navbar></custom-navbar>
 
   <main class="container mx-auto px-4 py-12">
-
-    <!-- Hero -->
-    <section class="relative bg-primary rounded-2xl overflow-hidden mb-16">
-      <div class="absolute inset-0 bg-black/25"></div>
-      <div class="relative z-10 max-w-4xl mx-auto text-center py-20 px-6">
+  <!-- Hero -->
+    <section class="relative bg-primary rounded-2xl overflow-hidden mb-16 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1629471722383-82f72a5284ac?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8')">
+<div class="absolute inset-0 bg-black/25"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center py-20 px-6">
         <h1 class="text-4xl md:text-5xl font-semibold mb-4 font-serif">
           Fresh Cut Lawn Care
         </h1>
@@ -82,70 +81,83 @@
       </div>
     </section>
 
-    <!-- Services -->
+<!-- Services -->
 <section class="mb-20">
-      <h2 class="text-3xl font-semibold text-center mb-12 font-serif">
-        Our Services
-      </h2>
+  <h2 class="text-3xl font-semibold text-center mb-12 font-serif">
+    Our Services
+  </h2>
 
-      <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-3 gap-8">
 
-        <!-- Lawn Care -->
-        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
-          <div class="h-44 bg-softbg/10 flex items-center justify-center">
-            <i data-feather="sun" class="w-14 h-14"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-medium mb-3">Lawn Care</h3>
-            <p class="mb-4">
-              Comprehensive seasonal care for a vibrant, healthy lawn.
-            </p>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Fertilization</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Weed Control</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Aeration</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Winter Services -->
-        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
-          <div class="h-44 bg-softbg/10 flex items-center justify-center">
-            <i data-feather="cloud-snow" class="w-14 h-14"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-medium mb-3">Winter Services</h3>
-            <p class="mb-4">
-              Reliable snow removal and ice management for safety all winter.
-            </p>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Snow Removal</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Ice Control</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Seasonal Prep</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Tree Care -->
-        <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
-          <div class="h-44 bg-softbg/10 flex items-center justify-center">
-            <i data-feather="tree" class="w-14 h-14"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-medium mb-3">Tree Care</h3>
-            <p class="mb-4">
-              Professional pruning and care for long-term tree health.
-            </p>
-            <ul class="space-y-2 mb-4 text-sm">
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Pruning</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Disease Treatment</li>
-              <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2"></i> Removal</li>
-            </ul>
-          </div>
-        </div>
-
+    <!-- Lawn Care -->
+    <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+      <div class="h-44">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661964075728-914c8ede7b85?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Lawn care service"
+          class="w-full h-full object-cover"
+        />
       </div>
-    </section>
+      <div class="p-6">
+        <h3 class="text-xl font-medium mb-3">Lawn Care</h3>
+        <p class="mb-4">
+          Comprehensive seasonal care for a vibrant, healthy lawn.
+        </p>
+        <ul class="space-y-2 mb-4 text-sm">
+          <li class="flex items-center">✔ Fertilization</li>
+          <li class="flex items-center">✔ Weed Control</li>
+          <li class="flex items-center">✔ Aeration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Winter Services -->
+    <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+      <div class="h-44">
+        <img
+          src="https://images.unsplash.com/photo-1629818571630-5523061def62?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Winter services"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-medium mb-3">Winter Services</h3>
+        <p class="mb-4">
+          Reliable snow removal and ice management for safety all winter.
+        </p>
+        <ul class="space-y-2 mb-4 text-sm">
+          <li class="flex items-center">✔ Snow Removal</li>
+          <li class="flex items-center">✔ Ice Control</li>
+          <li class="flex items-center">✔ Seasonal Prep</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tree Care -->
+    <div class="bg-primary rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+      <div class="h-44">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1725408028497-d5a2efcd6c54?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fHRyZWUlMjBwcnVuaW5nfGVufDB8fDB8fHww"
+          alt="Tree care service"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-medium mb-3">Tree Care</h3>
+        <p class="mb-4">
+          Professional pruning and care for long-term tree health.
+        </p>
+        <ul class="space-y-2 mb-4 text-sm">
+          <li class="flex items-center">✔ Pruning</li>
+          <li class="flex items-center">✔ Disease Treatment</li>
+          <li class="flex items-center">✔ Removal</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <!-- Gallery -->
     <section class="mb-20 bg-primary rounded-2xl p-10">
       <h2 class="text-3xl font-semibold text-center mb-12 font-serif">
@@ -153,21 +165,21 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="relative group overflow-hidden rounded-xl">
-          <img src="http://static.photos/outdoor/640x360/1" alt="Lawn care" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img src="https://images.unsplash.com/photo-1764969370921-7c8df49171cd?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lawn care" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
             <span class="text-white text-lg font-medium">Residential Lawn Care</span>
           </div>
         </div>
         <div class="relative group overflow-hidden rounded-xl">
-          <img src="http://static.photos/outdoor/640x360/2" alt="Snow removal" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img src="https://huggingface.co/spaces/Matb3nj1/clear-cut-crew-lawn-masters/resolve/main/images/Snow%20removed.jpg" alt="Snow removal" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
             <span class="text-white text-lg font-medium">Winter Maintenance</span>
           </div>
         </div>
         <div class="relative group overflow-hidden rounded-xl">
-          <img src="http://static.photos/outdoor/640x360/6" alt="Commercial" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img src="https://images.unsplash.com/photo-1738193830098-2d92352a1856?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhd24lMjBjYXJlfGVufDB8fDB8fHww" alt="Commercial" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-            <span class="text-white text-lg font-medium">Commercial Services</span>
+            <span class="text-white text-lg font-medium">Landscape design</span>
           </div>
         </div>
       </div>
