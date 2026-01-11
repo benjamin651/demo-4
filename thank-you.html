@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Fresh Cut Lawn Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0f5742',
+              secondary: '#1fad85',
+              highlight: '#52e0b8',
+              softbg: '#0f5742/90'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-white" style="background-color: #18aa4d">
+
+<custom-navbar></custom-navbar>
+
+<main class="container mx-auto px-4 py-24">
+  <!-- Thank You Section -->
+  <section class="max-w-3xl mx-auto text-center">
+    <div class="bg-primary rounded-2xl p-12 shadow-lg">
+      <div class="w-24 h-24 bg-highlight rounded-full flex items-center justify-center mx-auto mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">Thank You!</h1>
+      <p class="text-xl mb-8">We've received your request and will contact you within 24 hours to discuss your lawn care needs.</p>
+      <div class="bg-softbg rounded-lg p-6 mb-8 text-left">
+        <h3 class="text-lg font-bold mb-3">What to Expect Next:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Our team will review your request</li>
+          <li>We'll call or email to confirm details</li>
+          <li>A specialist will schedule an on-site visit</li>
+          <li>You'll receive a customized proposal</li>
+        </ol>
+      </div>
+      <p class="mb-8">In the meantime, feel free to explore our <a href="services.html" class="text-highlight hover:underline">services</a> or check out our <a href="learn.html" class="text-highlight hover:underline">lawn care resources</a>.</p>
+      <a href="/" class="inline-block bg-secondary hover:bg-highlight text-white px-8 py-3 rounded-full font-medium transition duration-300">
+        Back to Home
+      </a>
+    </div>
+  </section>
+</main>
+
+<custom-footer></custom-footer>
+
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
