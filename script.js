@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
             form.submit();
             window.location.href = 'thank-you.html';
             this.reset();
